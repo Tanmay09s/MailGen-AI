@@ -268,6 +268,6 @@ createdAt
 
 Tanmay Shahapure
 
-GitHub: https://github.com/yourusername
+GitHub:https://github.com/Tanmay09s
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn:https://www.linkedin.com/in/tanmay-shahapure-b982322ba?utm_source=share_via&utm_content=profile&utm_medium=member_android
