@@ -132,7 +132,7 @@ The application securely stores every generated campaign so users can revisit or
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/MailGen-AI.git
+git clone https://github.com/Tanmay09s/MailGen-AI.git
 ```
 
 ```bash
