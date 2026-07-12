@@ -8,6 +8,8 @@ const connectDB = require("./config/db");
 
 dotenv.config();
 
+console.log("CLIENT_URL =", process.env.CLIENT_URL);
+
 connectDB();
 
 const app = express();
