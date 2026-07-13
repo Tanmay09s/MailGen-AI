@@ -8,26 +8,36 @@ const connectDB = require("./config/db");
 
 dotenv.config();
 
-console.log("CLIENT_URL =", process.env.CLIENT_URL);
-
 connectDB();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.CLIENT_URL,
+];
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS Not Allowed"));
+      }
+    },
     credentials: true,
   })
 );
-app.use(express.json());
-app.use(express.urlencoded({extended:true}))
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/ai", aiRoutes);
 
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on ${PORT}`);
 });
