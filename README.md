@@ -86,8 +86,8 @@ If registration is temporarily unavailable due to email verification service lim
 ### Demo Credentials
 
 ```text
-Email: demo@mailgenai.com
-Password: Demo@123
+Email: tannyshahapure@gmail.com
+Password: 123456
 ```
 
 The demo account provides access to:
