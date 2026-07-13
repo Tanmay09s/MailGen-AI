@@ -6,6 +6,13 @@ MailGen AI helps job seekers, freelancers, and sales professionals generate pers
 
 The application includes secure authentication, email verification using OTP, campaign history management, Docker support, and a modern responsive interface.
 
+---
+
+# 🌐 Live Demo
+
+👉 **https://mail-gen-ai.vercel.app**
+
+---
 
 ## 📖 Project Overview
 
@@ -22,10 +29,11 @@ Users simply provide context about themselves and the target company, and the AI
 
 The application securely stores every generated campaign so users can revisit or delete them anytime.
 
+---
 
 ## ✨ Features
 
-### Authentication
+### 🔐 Authentication
 
 - User Registration
 - Secure Login
@@ -33,7 +41,7 @@ The application securely stores every generated campaign so users can revisit or
 - OTP Email Verification
 - Protected Routes
 
-### AI Features
+### 🤖 AI Features
 
 - AI-generated Cold Emails
 - AI-generated Subject Lines
@@ -41,14 +49,14 @@ The application securely stores every generated campaign so users can revisit or
 - Follow-up Email Generator
 - Personalized Responses
 
-### History
+### 📁 History
 
 - View Previous Campaigns
 - Search Campaigns
 - Delete Campaigns
 - Copy Generated Content
 
-### UI
+### 🎨 UI
 
 - Responsive Design
 - Premium Dashboard
@@ -56,19 +64,47 @@ The application securely stores every generated campaign so users can revisit or
 - Loading Indicators
 - Toast Notifications
 
-### Backend
+### ⚙ Backend
 
 - REST API
 - MongoDB Database
 - Secure Password Hashing
 - Authentication Middleware
 
-### Deployment
+### 🐳 Deployment
 
 - Dockerized Frontend
 - Dockerized Backend
 - Docker Compose Support
 
+---
+
+## ⚠ Demo Account
+
+If registration is temporarily unavailable due to email verification service limits or deployment issues, you can explore the application using the demo account below.
+
+### Demo Credentials
+
+```text
+Email: demo@mailgenai.com
+Password: Demo@123
+```
+
+The demo account provides access to:
+
+- AI Email Generation
+- AI Subject Generation
+- LinkedIn Message Generation
+- Follow-up Email Generation
+- Campaign History
+- Delete Campaigns
+- Copy Generated Content
+
+> **Note**
+>
+> The deployed version uses free-tier services. If registration or OTP email delivery is temporarily unavailable, simply use the demo account above.
+
+---
 
 ## 🛠 Tech Stack
 
@@ -105,6 +141,7 @@ The application securely stores every generated campaign so users can revisit or
 - Git
 - GitHub
 
+---
 
 ## 🏗 Project Architecture
 
@@ -126,6 +163,7 @@ The application securely stores every generated campaign so users can revisit or
           MongoDB Database
 ```
 
+---
 
 ## ⚙ Installation
 
@@ -153,6 +191,7 @@ cd ../client
 npm install
 ```
 
+---
 
 ## 🔑 Environment Variables
 
@@ -178,6 +217,7 @@ GEMINI_API_KEY=
 VITE_API_URL=http://localhost:5000/api
 ```
 
+---
 
 ## ▶ Running the Project
 
@@ -185,7 +225,6 @@ VITE_API_URL=http://localhost:5000/api
 
 ```bash
 cd server
-
 npm run dev
 ```
 
@@ -193,15 +232,24 @@ npm run dev
 
 ```bash
 cd client
-
 npm run dev
 ```
 
-Visit
+Visit:
 
 ```text
 http://localhost:5173
 ```
+
+---
+
+## 🌐 Deployment
+
+### Live Application
+
+https://mail-gen-ai.vercel.app
+
+---
 
 ## 🐳 Docker Support
 
@@ -217,6 +265,7 @@ Stop containers
 docker compose down
 ```
 
+---
 
 ## 🗄 Database Schema
 
@@ -224,13 +273,9 @@ docker compose down
 
 ```text
 name
-
 email
-
 password
-
 verified
-
 createdAt
 ```
 
@@ -238,19 +283,41 @@ createdAt
 
 ```text
 userId
-
 prompt
-
 subject
-
 emailBody
-
 linkedInDM
-
 followUpEmail
-
 createdAt
 ```
+
+---
+
+## 📂 Project Structure
+
+```text
+MailGen-AI
+│
+├── client
+│   ├── src
+│   ├── public
+│   └── package.json
+│
+├── server
+│   ├── Controllers
+│   ├── Middleware
+│   ├── Models
+│   ├── Routes
+│   ├── Services
+│   ├── Config
+│   └── package.json
+│
+├── docker-compose.yml
+├── README.md
+└── .gitignore
+```
+
+---
 
 ## 🚀 Future Enhancements
 
@@ -258,16 +325,31 @@ createdAt
 - Export Emails as DOCX
 - Campaign Analytics
 - Favorite Campaigns
-- Search & Filters
+- Advanced Search & Filters
 - AI Templates
 - Email Scheduling
 - Multi-language Support
 - Dark / Light Theme
+- Rich Text Email Editor
+
+---
 
 ## 👨‍💻 Author
 
-Tanmay Shahapure
+**Tanmay Shahapure**
 
-GitHub:https://github.com/Tanmay09s
+GitHub:  
+https://github.com/Tanmay09s
 
-LinkedIn:https://www.linkedin.com/in/tanmay-shahapure-b982322ba?utm_source=share_via&utm_content=profile&utm_medium=member_android
+LinkedIn:  
+https://www.linkedin.com/in/tanmay-shahapure-b982322ba
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates future improvements.
+
+Happy Coding! 🚀
